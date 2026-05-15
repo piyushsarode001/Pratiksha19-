@@ -1,0 +1,35 @@
+public class LargestElement {
+    public static void main(String[] args) {
+
+        // Static 2D array
+        int[][] arr = {
+            {10, 25, 30},
+            {45, 50, 15},
+            {5, 60, 20}
+        };
+
+        // Assume first element is largest
+        int largest = arr[0][0];
+
+        // Find largest element
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] > largest) {
+                    largest = arr[i][j];
+                }
+            }
+        }
+
+        // Display array
+        System.out.println("2D Array:");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // Output result
+        System.out.println("Largest element in the 2D array is: " + largest);
+    }
+}
