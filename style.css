@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#111;
+    padding:15px 0;
+}
+
+.navbar-brand{
+    color:#ffb703 !important;
+    font-size:32px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#ffb703 !important;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:700;
+}
+
+.hero span{
+    color:#ffb703;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:20px;
+}
+
+.btn-custom{
+    background:#ffb703;
+    color:black;
+    padding:14px 35px;
+    border:none;
+    border-radius:40px;
+    margin-top:20px;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.btn-custom:hover{
+    background:white;
+    transform:translateY(-5px);
+}
+
+/* OFFER */
+
+.offer{
+    background:#ffb703;
+    padding:15px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:45px;
+    font-weight:700;
+}
+
+/* LOGIN */
+
+.login-section{
+    padding:100px 0;
+    background:#f8f9fa;
+}
+
+.login-box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* FOOD CATEGORY */
+
+.categories{
+    padding:100px 0;
+    background:#111;
+}
+
+.category-box{
+    position:relative;
+}
+
+.food-dropdown{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:220px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    opacity:0;
+    visibility:hidden;
+    transition:0.4s;
+    z-index:100;
+}
+
+.food-dropdown ul{
+    list-style:none;
+    padding:20px;
+    margin:0;
+}
+
+.food-dropdown ul li{
+    padding:10px;
+    border-bottom:1px solid #eee;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.food-dropdown ul li:hover{
+    background:#ffb703;
+    padding-left:15px;
+}
+
+.category-box:hover .food-dropdown{
+    opacity:1;
+    visibility:visible;
+    top:80px;
+}
+
+/* MENU */
+
+.menu{
+    padding:100px 0;
+}
+
+.menu-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.menu-card:hover{
+    transform:translateY(-10px);
+}
+
+.menu-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.price{
+    color:#ff6b00;
+    font-weight:700;
+}
+
+/* SERVICES */
+
+.services{
+    padding:100px 0;
+    background:#111;
+    color:white;
+}
+
+.service-box{
+    background:#1f1f1f;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+}
+
+.service-box:hover{
+    background:#ffb703;
+    color:black;
+    transform:translateY(-10px);
+}
+
+.service-box i{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+/* GALLERY */
+
+.gallery{
+    padding:100px 0;
+    background:#f8f9fa;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* COUNTER */
+
+.counter{
+    padding:100px 0;
+    background:#ffb703;
+    text-align:center;
+}
+
+.counter h1{
+    font-size:60px;
+    font-weight:700;
+}
+
+/* RESERVATION */
+
+.reservation{
+    padding:100px 0;
+}
+
+.reservation form{
+    background:#f8f9fa;
+    padding:40px;
+    border-radius:20px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+    padding:100px 0;
+    background:#111;
+    color:white;
+}
+
+.review-box{
+    background:#1f1f1f;
+    padding:30px;
+    border-radius:20px;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    padding:80px 0;
+    background:#ffb703;
+    text-align:center;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:100px 0;
+}
+
+iframe{
+    width:100%;
+    border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    z-index:1000;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.section-title h2{
+    font-size:35px;
+}
+
+.food-dropdown{
+    width:200px;
+}
+
+}
